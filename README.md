@@ -1,3 +1,3 @@
 # resnet50
 
-![](.README_images/main-help.png)
+![](.README_images/python-main-help.png)
