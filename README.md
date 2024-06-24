@@ -6,6 +6,16 @@
 
 ![](.README_images/cmd-options.png)
 
+### 0. 准备数据集:
+
+```bash
+cd /stores/datasets/imagenet
+wget http://10.113.3.1/corex/toolbox/datasets/imagenet2012/ILSVRC2012_img_train.tar
+wget http://10.113.3.1/corex/toolbox/datasets/imagenet2012/ILSVRC2012_img_val.tar
+tar -xf ILSVRC2012_img_train.tar
+tar -xf ILSVRC2012_img_val.tar
+```
+
 ### 1. 单机单卡训练:
 
 ```bash
