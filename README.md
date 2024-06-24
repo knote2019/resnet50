@@ -25,14 +25,14 @@ python main.py --arch resnet50 --epochs 1 --learning-rate 0.1 /stores/datasets/i
 ### 2. 单机多卡训练:
 
 ```bash
-python main.py --arch resnet50 --epochs 1 --learning-rate 0.1 --dist-url 'tcp://127.0.0.1:8888' --dist-backend 'nccl' --multiprocessing-distributed --world-size 1 --rank 0 /stores/datasets/imagenet
+python main.py --arch resnet50 --epochs 1 --learning-rate 0.1 --dist-url 'tcp://127.0.0.1:28888' --dist-backend 'nccl' --multiprocessing-distributed --world-size 1 --rank 0 /stores/datasets/imagenet
 ```
 
 ### 3. 多机多卡训练:
 
 ```bash
-python main.py --arch resnet50 --epochs 1 --learning-rate 0.1 --dist-url 'tcp://10.113.1.77:8888' --dist-backend 'nccl' --multiprocessing-distributed --world-size 2 --rank 0 /stores/datasets/imagenet
-python main.py --arch resnet50 --epochs 1 --learning-rate 0.1 --dist-url 'tcp://10.113.1.77:8888' --dist-backend 'nccl' --multiprocessing-distributed --world-size 2 --rank 1 /stores/datasets/imagenet
+python main.py --arch resnet50 --epochs 1 --learning-rate 0.1 --dist-url 'tcp://10.113.1.77:28888' --dist-backend 'nccl' --multiprocessing-distributed --world-size 2 --rank 0 /stores/datasets/imagenet
+python main.py --arch resnet50 --epochs 1 --learning-rate 0.1 --dist-url 'tcp://10.113.1.77:28888' --dist-backend 'nccl' --multiprocessing-distributed --world-size 2 --rank 1 /stores/datasets/imagenet
 ```
 
 ### NOTE:
